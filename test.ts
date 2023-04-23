@@ -1,6 +1,12 @@
-const a = [];
-const b = a;
+type Foo = {
+  bar?: string;
+};
 
-b.push(1);
-
-console.log(a);
+function doSomething(foo: Foo): boolean {
+  if (foo.bar) {
+    return true;
+  } else {
+    // ...c
+    return false;
+  }
+}

@@ -1,6 +1,28 @@
-fn main() {
-    let x = 5;
-    let y = &x;
+enum RSEnum {
+    Foo(i32),
+    Bar(String),
+    Baz(Vec<String>),
+  }
 
-    println!("{:?}", x + y);
+fn main() {
+    let foo = Some(5);
+
+    if let Some(value) = foo {
+
+    }
+
+    match foo {
+        Some(value) => {
+
+        },
+        None => {
+
+        }
+    }
+
+    foo.map(|x| {
+
+    });
+
+    foo.filter(|x| x < &10);
 }
